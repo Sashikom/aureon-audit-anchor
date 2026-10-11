@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "chain_id": "aureon-phase4-export",
+  "anchor_id": "aureon-phase4-export:phase3-tamper-export:a9fbaea6dcddb465",
+  "recovery_id": "phase3-tamper-export",
+  "event_class": "RECOVERY",
+  "head_hash": "a9fbaea6dcddb4658bfdc6f6457cac011e1befe57834a99563c32da769682715",
+  "entry_count": 1,
+  "created_at_utc": "2026-10-11T00:00:00Z",
+  "previous_anchor_hash": null,
+  "anchor_hash": "c76cb077d57d57410b82ab964c462135c83e2945db926a629fa4348145347917"
+}
