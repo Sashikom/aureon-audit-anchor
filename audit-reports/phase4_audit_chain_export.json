@@ -1,0 +1,74 @@
+[
+  {
+    "recovery_id": "phase3-tamper-export",
+    "integrity_report": {
+      "state": "CORRUPTED",
+      "checked_entries": 100,
+      "valid_from_index": 0,
+      "last_entry_id": "c100",
+      "chain_hash": "f287c4bf4df939895257a47786785af7a331a6e1d8dffa451aaabb143a7ce1f7",
+      "merkle_root": "537117923aacdd75fa7c1b1254304e449b811c3f2a604fe0c95e8ead0b5c247e",
+      "errors": [
+        "parent hash mismatch: c051"
+      ],
+      "rationale": "immutable identity or chain integrity is broken"
+    },
+    "boundary_verdict": {
+      "boundary_status": "CLEAR",
+      "last_known_good_snapshot": {
+        "commit_id": "c049",
+        "created_at": 49,
+        "merkle_root": "e7689191b8ca8c2c3d97825108828ba23c006b885b3b320d13b2f5b9a3dc47eb",
+        "schema_version": 1,
+        "snapshot_id": "snap-049",
+        "verified": true
+      },
+      "last_known_good_commit": {
+        "commit_id": "c049",
+        "logical_clock": 49,
+        "timestamp_index": 49,
+        "version": "lv:49"
+      },
+      "safe_replay_range": null,
+      "gap_ranges": [],
+      "quarantine_ranges": [
+        {
+          "end": "c050",
+          "reason": "quarantined commit",
+          "start": "c050"
+        }
+      ],
+      "orphaned_commits": [],
+      "confidence": "HIGH",
+      "determination_method": "SNAPSHOT_ANCHOR",
+      "evidence": [
+        "first post-anchor commit c050 is not safely replayable; no safe replay exists",
+        "anchor=c049; last_known_good=c049"
+      ]
+    },
+    "replay_report": {
+      "status": "SUCCESS",
+      "applied_commits": [],
+      "skipped_commits": [],
+      "failed_commits": [],
+      "state_consistency": "CONSISTENT",
+      "external_consistency": "CONSISTENT",
+      "anomalies": [],
+      "evidence": [
+        "nothing to apply",
+        "post-replay verification found no anomalies"
+      ],
+      "rollback_performed": false
+    },
+    "metadata": {
+      "recovery_id": "phase3-tamper-export",
+      "started_at": "2026-10-10T05:54:47.777999+00:00",
+      "completed_at": "2026-10-10T05:54:47.777999+00:00",
+      "triggered_by": "phase4-real-phase3-export",
+      "metadata": []
+    },
+    "created_at": "2026-10-10T05:54:47.777999+00:00",
+    "previous_hash": null,
+    "entry_hash": "a9fbaea6dcddb4658bfdc6f6457cac011e1befe57834a99563c32da769682715"
+  }
+]
